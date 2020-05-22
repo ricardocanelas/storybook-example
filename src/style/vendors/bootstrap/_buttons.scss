@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  object-fit: contain;
+  box-shadow: 0 4px 0 0 white;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  outline: none;
+}
+
+.btn:active:focus {
+  outline: none;
+}

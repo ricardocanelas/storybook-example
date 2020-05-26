@@ -1,8 +1,8 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
+import React from "react";
+import Button from "react-bootstrap/Button";
 
 export default {
-  title: 'Boostrap-Button',
+  title: "Boostrap-Button",
   component: Button,
 };
 
@@ -13,5 +13,5 @@ export const Variant = () => {
       <Button variant="primary">Primary</Button>
       <Button variant="secondary">Secondary</Button>
     </div>
-  )
-}
+  );
+};

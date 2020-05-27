@@ -19,7 +19,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -c .storybook -o docs",
-    "deploy": "gh-pages -d docs "
+    "deploy": "yarn build-storybook && gh-pages -d docs",
+    "update": "yarn add -D @storybook/react @storybook/addons @storybook/preset-create-react-app @storybook/addon-links @storybook/addon-docs @storybook/addon-actions"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,12 +38,12 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.3.18",
-    "@storybook/addon-docs": "^5.3.18",
-    "@storybook/addon-links": "^5.3.18",
-    "@storybook/addons": "^5.3.18",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.0.0",
-    "@storybook/react": "^5.3.18",
+    "@storybook/react": "^5.3.19",
     "babel-loader": "^8.1.0",
     "gh-pages": "^2.2.0",
     "node-sass": "^4.14.1",

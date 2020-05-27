@@ -1,0 +1,43 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import Dropdown from "react-bootstrap/Dropdown";
+
+<Meta title="Dropdown (no-working)" />
+
+# Dropdown
+
+Dropdowns are toggleable, contextual overlays for displaying lists
+of links and more. Like overlays, Dropdowns are built using a third-party
+library Popper.js, which provides dynamic positioning
+and viewport detection.
+
+<Preview>
+  <div>
+    <Dropdown>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+        Dropdown Button
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  </div>
+</Preview>
+
+## Error Message
+
+WARNING in ./src/stories/Dropdown.stories.mdx
+Module build failed (from ./node_modules/@mdx-js/loader/index.js):
+SyntaxError: unknown: Expected corresponding JSX closing tag for <Dropdown> (27:2)
+
+```
+  25 | </Dropdown>
+  26 | `}</code></pre>
+> 27 |   </div>
+     |   ^
+  28 | </Preview>
+  29 |     </MDXLayout>
+  30 |   )
+```
